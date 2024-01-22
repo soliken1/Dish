@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(res/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 150px center;
+    background-size: cover;
+    background-color: black;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.grid-container {
+    display: inline-flex;
+    height: 85px;
+}
+
+.wrapper > * {
+    padding: 5px;
+    margin: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    height: 100px;
+}
+
+.main {
+    height: 420px;
+}
+
+.side {
+    border: 2px solid red;
+    height: 420px;
+}
+
+.footer {
+    border: 2px solid red;
+    height: 70px;
+}
+
+.logo {
+    font-size: 45px;
+    padding-top: 12px;
+}
+
+.logoimg {
+    width: 100px;
+    height: 100px;
+}
+
+.searchtext {
+    font-size: 25px;
+}
+
+.searchbox {
+    width: 50%;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: wheat;
+}
+
+.textstyle {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+.glassbody {
+    padding-top: 40px;
+    transform: translate(4%, 50%);
+    width: 600px;
+    height: 200px;
+    /* From https://css.glass */
+    background: rgba(229, 59, 0, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(229, 59, 0, 1);
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 1;
+    }
+    .main {
+        order: 1;
+    }
+    .side {
+        order: 2;
+    }
+    .footer {
+        order: 3;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .side {
+        flex: 1;
+    }
+}
