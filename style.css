@@ -80,7 +80,6 @@ html, body {
     transform: translate(4%, 50%);
     width: 600px;
     height: 200px;
-    /* From https://css.glass */
     background: rgba(229, 59, 0, 0.17);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
